@@ -136,7 +136,7 @@ int main(){
   Boneca Ambalabu, Tang tang tang bayar hutang kau, Bis Hitam, Tralaluli Patraluli, Hamster mata merah,
   Pencil Dud dud gendud, Kaktus Tidak Taraweh, Pulpen biru, Pohon pisang, Monyet azan, Cik cik cikal cik,
   Hor Hor Hor Horeg, Sahur Puasa tapi tidak sholat 5 waktu, Bombinarium, Nerpinarium,
-  El Bobrito de Kurvito, El szczurito kurwito golfito"<<endl;
+  El Bobrito de Kurvito, El szczurito kurwito golfito"<<endl;//@dora ova nisto ne znaci
   cin>>n>>m;
   l.pishiPrv(n);
   if((m>n || m<n)&& !cin.fail())eb=true;//ako ova e ispolneto znaci deka se vneseni barem 2 validni clena
