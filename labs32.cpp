@@ -87,7 +87,7 @@ struct listi4ka{
 };
 
 void sort(listi4ka &l) {
-  if (l.shef == nullptr || l.shef->sled == nullptr) return; // empty or single-node list
+  if (l.shef == nullptr || l.shef->sled == nullptr) return;
 
   bool swapped;
   do {
@@ -96,21 +96,18 @@ void sort(listi4ka &l) {
 
     while (current->sled != nullptr) {
       if (current->podato4e > current->sled->podato4e) {
-        // Swap the nodes
         jazol4e *next = current->sled;
-
-        // Update surrounding nodes' pointers
         if (current->pret != nullptr)
           current->pret->sled = next;
         else
-          l.shef = next; // current was head
+          l.shef = next;
 
         if (next->sled != nullptr)
           next->sled->pret = current;
         else
-          l.gz = current; // next was tail
+          l.gz = current;
 
-        // Swap the nodes
+
         current->sled = next->sled;
         next->pret = current->pret;
         current->pret = next;
